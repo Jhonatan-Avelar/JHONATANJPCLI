@@ -1,0 +1,14 @@
+version: '2'
+services:
+  # All in One appication
+  AIO:
+    image: docker.corp.*****.org/automation-bel/aio:latest
+    volumes:
+      - /run/dbus:/host/run/dbus
+      - /proc/sysrq-trigger:/aio/sysrq
+      - /storage/pi/:/storage/pi/:z
+    ports:
+      - "8080:5900"
+    privileged: true
+    tty: true
+    dns_search: corp.*****.org
