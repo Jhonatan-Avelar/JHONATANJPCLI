@@ -1,0 +1,1 @@
+O programa é recebe uma série de nomes de dispositivos, mapeia eles conforme está a sua orientação na fábrica, monta uma URL e envia requests conforme for necessário. O fluxo principal acontece no arquivo "jpcli_script_python.py"
